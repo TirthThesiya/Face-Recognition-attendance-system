@@ -19,7 +19,7 @@ firebase_admin.initialize_app(cred, {
 
 bucket = storage.bucket()
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 cap.set(3, 640)
 cap.set(4, 480)
 
@@ -31,7 +31,7 @@ modePathList = os.listdir(folderModePath)
 imgModeList = []
 for path in modePathList:
     imgModeList.append(cv2.imread(os.path.join(folderModePath, path)))
-# print(len(imgModeList))
+print(len(imgModeList))
 
 # Load the encoding file
 print("Loading Encode File ...")

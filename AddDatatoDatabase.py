@@ -12,7 +12,7 @@ ref = db.reference('Students')
 data = {
     "1":
         {
-            "name": "Meet Gorasiya",
+            "name": "Meet Gorasia",
             "major": "CSE",
             "starting_year": 2022,
             "total_attendance": 7,
